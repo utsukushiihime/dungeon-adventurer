@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Home from "../../pages/home";
-
-const Nav = (props) => {
+const Nav = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        Navbar
-                    </a>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container">
+                    <Link className="navbar-brand" to="/">
+                        Dungeon Adventurer
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"

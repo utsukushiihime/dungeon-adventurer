@@ -7,7 +7,9 @@ const Layout = (props) => {
     return (
         <>
             <Nav />
-            <div className="container">{props.children}</div>
+            <main>
+                <div className="container my-5">{props.children}</div>
+            </main>
             <Footer />
         </>
     );
