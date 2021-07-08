@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import axios from "axios";
 
-const KBList = () => {
+const SpellsList = () => {
     const [items, setItems] = useState([]);
     const BASE_URL = `https://www.dnd5eapi.co`;
     const spells = `${BASE_URL}/api/spells`;
@@ -31,4 +31,4 @@ const KBList = () => {
     );
 };
 
-export default KBList;
+export default SpellsList;
