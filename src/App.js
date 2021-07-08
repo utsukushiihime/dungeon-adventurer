@@ -7,7 +7,8 @@ import Contact from "./pages/Contact";
 import Knowledgebase from "./pages/Knowledgebase";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Spell from "../src/components/KB/Spell";
+import SpellPage from "./components/KB/SpellPage";
+import ClassPage from "./components/KB/ClassPage";
 import NotFound from "../src/components/Helpers/NotFound";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,7 +27,12 @@ function App() {
                     <Route
                         exact
                         path="/knowledgebase/spells/:index"
-                        component={Spell}
+                        component={SpellPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/classes/:index"
+                        component={ClassPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
