@@ -4,7 +4,7 @@ import { TiHeart } from "react-icons/ti";
 const Footer = () => {
     return (
         <>
-            <footer className="footer mt-auto py-3 fixed-bottom bg-dark">
+            <footer className="footer mt-auto py-3 sticky-bottom bg-dark">
                 <div className="container">
                     <div className="row">
                         <div className="col-8">
