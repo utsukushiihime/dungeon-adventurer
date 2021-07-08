@@ -13,7 +13,6 @@ const BackgroundList = (props) => {
             setLoading(true);
             try {
                 const response = await axios.get("/api/backgrounds/");
-                console.log(response.data.results);
                 setBackgroundList(response.data.results);
                 setLoading(false);
             } catch (error) {
@@ -26,10 +25,10 @@ const BackgroundList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading spells...</div>;
+        return <div>Loading...</div>;
     }
     if (error) {
-        return <div>Error loading spells: {error}</div>;
+        return <div>Error loading: {error}</div>;
     }
 
     return (

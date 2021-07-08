@@ -25,10 +25,10 @@ const RacesList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading spells...</div>;
+        return <div>Loading...</div>;
     }
     if (error) {
-        return <div>Error loading spells: {error}</div>;
+        return <div>Error loading: {error}</div>;
     }
 
     return (

@@ -29,7 +29,7 @@ const SpellPage = () => {
         return <div>Loading...</div>;
     }
     if (error) {
-        return <div>{error}</div>;
+        return <div>Error loading: {error}</div>;
     }
 
     return (
