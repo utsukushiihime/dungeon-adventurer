@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const BackgroundList = (props) => {
+const RacesList = (props) => {
     axios.defaults.baseURL = "https://www.dnd5eapi.co";
-    const [backgroundList, setBackgroundList] = useState([]);
+    const [racesList, setRacesList] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        async function fetchBackgroundList() {
+        async function fetchRacesList() {
             setLoading(true);
             try {
-                const response = await axios.get("/api/backgrounds/");
+                const response = await axios.get("/api/races/");
                 console.log(response.data.results);
-                setBackgroundList(response.data.results);
+                setRacesList(response.data.results);
                 setLoading(false);
             } catch (error) {
                 setError(error.message);
@@ -22,7 +22,7 @@ const BackgroundList = (props) => {
             }
         }
 
-        fetchBackgroundList();
+        fetchRacesList();
     }, []);
 
     if (loading) {
@@ -34,17 +34,14 @@ const BackgroundList = (props) => {
 
     return (
         <div className="container">
-            <h1>Backgrounds</h1>
-            {backgroundList.map((background, key) => (
-                <Link
-                    key={key}
-                    to={`/knowledgebase/backgrounds/${background.index}`}
-                >
-                    <h5>{background.name}</h5>
+            <h1>Races</h1>
+            {racesList.map((race, key) => (
+                <Link key={key} to={`/knowledgebase/races/${race.index}`}>
+                    <h5>{race.name}</h5>
                 </Link>
             ))}
         </div>
     );
 };
 
-export default BackgroundList;
+export default RacesList;

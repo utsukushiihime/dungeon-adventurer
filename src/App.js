@@ -13,6 +13,7 @@ import BackgroundPage from "./components/KB/BackgroundPage";
 import NotFound from "../src/components/Helpers/NotFound";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import RacesPage from "./components/KB/RacesPage";
 
 function App() {
     return (
@@ -39,6 +40,11 @@ function App() {
                         exact
                         path="/knowledgebase/backgrounds/:index"
                         component={BackgroundPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/races/:index"
+                        component={RacesPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
