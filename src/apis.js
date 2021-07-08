@@ -1,4 +1,4 @@
-const BASE_URL = `https://www.dnd5eapi.co/`;
+const BASE_URL = `https://www.dnd5eapi.co`;
 
 const abilityScores = `${BASE_URL}/api/ability-scores`;
 const alignments = `${BASE_URL}/api/alignments`;
