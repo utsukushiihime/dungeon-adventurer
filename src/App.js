@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import SpellPage from "./components/KB/SpellPage";
 import ClassPage from "./components/KB/ClassPage";
+import BackgroundPage from "./components/KB/BackgroundPage";
 import NotFound from "../src/components/Helpers/NotFound";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,6 +34,11 @@ function App() {
                         exact
                         path="/knowledgebase/classes/:index"
                         component={ClassPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/backgrounds/:index"
+                        component={BackgroundPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
