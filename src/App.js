@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -12,8 +14,8 @@ import ClassPage from "./components/KB/ClassPage";
 import BackgroundPage from "./components/KB/BackgroundPage";
 import NotFound from "../src/components/Helpers/NotFound";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import RacesPage from "./components/KB/RacesPage";
+import SubclassPage from "./components/KB/SubclassPage";
 
 function App() {
     return (
@@ -45,6 +47,11 @@ function App() {
                         exact
                         path="/knowledgebase/races/:index"
                         component={RacesPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/subclasses/:index"
+                        component={SubclassPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />

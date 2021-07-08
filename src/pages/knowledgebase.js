@@ -5,6 +5,7 @@ import SpellsList from "../components/KB/SpellsList";
 import ClassList from "../components/KB/ClassList";
 import BackgroundList from "../components/KB/BackgroundList";
 import RacesList from "../components/KB/RacesList";
+import SubclassList from "../components/KB/SubclassList";
 
 const Knowledgebase = (props) => {
     return (
@@ -21,6 +22,9 @@ const Knowledgebase = (props) => {
                 </div>
                 <div className="col">
                     <RacesList races={props.index} />
+                </div>
+                <div className="col">
+                    <SubclassList subclass={props.index} />
                 </div>
             </div>
         </Layout>
