@@ -13,7 +13,6 @@ const RacesList = (props) => {
             setLoading(true);
             try {
                 const response = await axios.get("/api/races/");
-                console.log(response.data.results);
                 setRacesList(response.data.results);
                 setLoading(false);
             } catch (error) {
