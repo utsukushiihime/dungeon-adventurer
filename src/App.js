@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Knowledgebase from "./pages/Knowledgebase";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-// import KBItem from "../src/components/KB/KBItem";
+import Spell from "../src/components/KB/Spell";
 import NotFound from "../src/components/Helpers/NotFound";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,10 +18,18 @@ function App() {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route
+                        exact
+                        path="/knowledgebase"
+                        component={Knowledgebase}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/spells/:index"
+                        component={Spell}
+                    />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/knowledgebase" component={Knowledgebase} />
-                    {/* <Route path="/knowledgebase/:name" component={KBItem} /> */}
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
                     <Route component={NotFound} />

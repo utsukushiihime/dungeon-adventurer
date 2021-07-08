@@ -3,12 +3,12 @@ import React from "react";
 import Layout from "../components/UI/Layout";
 import SpellsList from "../components/KB/SpellsList";
 
-const knowledgebase = (props) => {
+const Knowledgebase = (props) => {
     return (
         <Layout>
-            <SpellsList spells={props.spells} />
+            <SpellsList spells={props.index} />
         </Layout>
     );
 };
 
-export default knowledgebase;
+export default Knowledgebase;
