@@ -21,6 +21,7 @@ import SubracesPage from "./components/KB/SubracesPage";
 import TraitsPage from "./components/KB/TraitsPage";
 import EquipmentCategoryPage from "./components/KB/EquipmentCategoryPage";
 import EquipmentPage from "./components/KB/EquipmentPage";
+import MonstersPage from "./components/KB/MonstersPage";
 
 function App() {
     return (
@@ -82,6 +83,11 @@ function App() {
                         exact
                         path="/knowledgebase/equipment-categories/:index"
                         component={EquipmentCategoryPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/monsters/:index"
+                        component={MonstersPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />

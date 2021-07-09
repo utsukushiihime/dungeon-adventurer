@@ -11,6 +11,7 @@ import SubracesList from "../components/KB/SubracesList";
 import TraitsList from "../components/KB/TraitsList";
 import EquipmentCategoryList from "../components/KB/EquipmentCategoryList";
 import EquipmentList from "../components/KB/EquipmentList";
+import MonstersList from "../components/KB/MonstersList";
 
 const Knowledgebase = (props) => {
     return (
@@ -45,6 +46,9 @@ const Knowledgebase = (props) => {
                 </div>
                 <div className="col-lg-4 mb-4">
                     <TraitsList traits={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
+                    <MonstersList weapons={props.index} />
                 </div>
             </div>
         </Layout>
