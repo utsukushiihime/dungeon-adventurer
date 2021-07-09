@@ -47,6 +47,6 @@ p {
     height: 300px;
     overflow: scroll;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 8px;
     padding: 20px;
 }

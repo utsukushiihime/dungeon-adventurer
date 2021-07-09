@@ -1,6 +1,6 @@
 # Dungeon Adventurer
 
-### Dungeon Adventurer is a text based dungeon crawler game. It is written in React and uses Context API to pass information between components.
+### Dungeon Adventurer is a text based dungeon crawler game. It is written in React.
 
 ---
 
