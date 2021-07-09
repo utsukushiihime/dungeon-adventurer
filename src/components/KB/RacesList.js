@@ -34,7 +34,7 @@ const RacesList = (props) => {
     }
 
     return (
-        <div className="container max-items bg-dark">
+        <div className="container max-items bg-dark sticky-top bg-dark pb-2">
             <h1 className="text-danger">Races</h1>
             {racesList.map((race, key) => (
                 <Link key={key} to={`/knowledgebase/races/${race.index}`}>

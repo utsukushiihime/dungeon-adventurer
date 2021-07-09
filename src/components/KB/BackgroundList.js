@@ -35,7 +35,7 @@ const BackgroundList = (props) => {
 
     return (
         <div className="container max-items bg-dark">
-            <h1 className="text-danger">Backgrounds</h1>
+            <h1 className="text-danger sticky-top bg-dark pb-2">Backgrounds</h1>
             {backgroundList.map((background, key) => (
                 <Link
                     key={key}

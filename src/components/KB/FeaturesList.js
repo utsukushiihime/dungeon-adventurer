@@ -35,7 +35,7 @@ const FeaturesList = (props) => {
 
     return (
         <div className="container max-items bg-dark">
-            <h1 className="text-danger">Features</h1>
+            <h1 className="text-danger sticky-top bg-dark pb-2">Features</h1>
             {featuresList.map((feature, key) => (
                 <Link key={key} to={`/knowledgebase/features/${feature.index}`}>
                     <div className="text-white">

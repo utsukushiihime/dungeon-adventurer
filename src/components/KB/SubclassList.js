@@ -35,7 +35,7 @@ const SubclassList = (props) => {
 
     return (
         <div className="container max-items bg-dark">
-            <h1 className="text-danger">Subclasses</h1>
+            <h1 className="text-danger sticky-top bg-dark pb-2">Subclasses</h1>
             {subClassList.map((subClass, key) => (
                 <Link
                     key={key}

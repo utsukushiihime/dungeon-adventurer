@@ -35,7 +35,7 @@ const ClassList = (props) => {
 
     return (
         <div className="container max-items bg-dark">
-            <h1 className="text-danger">Classes</h1>
+            <h1 className="text-danger sticky-top bg-dark pb-2">Classes</h1>
             {classList.map((classItem, key) => (
                 <Link
                     key={key}
