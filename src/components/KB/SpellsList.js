@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { RiArrowDropRightLine } from "react-icons/ri";
+
 const SpellsList = (props) => {
     axios.defaults.baseURL = "https://www.dnd5eapi.co";
     const [spells, setSpells] = useState([]);
@@ -36,7 +38,9 @@ const SpellsList = (props) => {
             <h1>Spells</h1>
             {spells.map((spell, key) => (
                 <Link key={key} to={`/knowledgebase/spells/${spell.index}`}>
-                    <div>{spell.name}</div>
+                    <div>
+                        <RiArrowDropRightLine /> {spell.name}
+                    </div>
                 </Link>
             ))}
         </div>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { RiArrowDropRightLine } from "react-icons/ri";
+
 const BackgroundList = (props) => {
     axios.defaults.baseURL = "https://www.dnd5eapi.co";
     const [backgroundList, setBackgroundList] = useState([]);
@@ -39,7 +41,9 @@ const BackgroundList = (props) => {
                     key={key}
                     to={`/knowledgebase/backgrounds/${background.index}`}
                 >
-                    <div>{background.name}</div>
+                    <div>
+                        <RiArrowDropRightLine /> {background.name}
+                    </div>
                 </Link>
             ))}
         </div>

@@ -39,7 +39,7 @@ const SubclassPage = () => {
             <h5>Subclass Flavor </h5>
             <p>{subClass.subclass_flavor}</p>
 
-            <h5 className="fw-bold">Description: </h5>
+            <h5 className="fw-bold">Description </h5>
             <p>{JSON.stringify(subClass.desc, null, 2)}</p>
 
             <h5>Subclass Levels </h5>

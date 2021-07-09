@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { RiArrowDropRightLine } from "react-icons/ri";
+
 const ClassList = (props) => {
     axios.defaults.baseURL = "https://www.dnd5eapi.co";
     const [classList, setClassList] = useState([]);
@@ -39,7 +41,9 @@ const ClassList = (props) => {
                     key={key}
                     to={`/knowledgebase/classes/${classItem.index}`}
                 >
-                    <div>{classItem.name}</div>
+                    <div>
+                        <RiArrowDropRightLine /> {classItem.name}
+                    </div>
                 </Link>
             ))}
         </div>

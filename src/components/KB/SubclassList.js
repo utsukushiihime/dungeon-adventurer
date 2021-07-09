@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { RiArrowDropRightLine } from "react-icons/ri";
+
 const SubclassList = (props) => {
     axios.defaults.baseURL = "https://www.dnd5eapi.co";
     const [subClassList, setSubclassList] = useState([]);
@@ -39,7 +41,9 @@ const SubclassList = (props) => {
                     key={key}
                     to={`/knowledgebase/subclasses/${subClass.index}`}
                 >
-                    <div>{subClass.name}</div>
+                    <div>
+                        <RiArrowDropRightLine /> {subClass.name}
+                    </div>
                 </Link>
             ))}
         </div>
