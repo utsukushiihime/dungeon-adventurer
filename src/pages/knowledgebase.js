@@ -16,6 +16,7 @@ import MonstersList from "../components/KB/MonstersList";
 const Knowledgebase = (props) => {
     return (
         <Layout>
+            <h1 className="mb-3">Knowledgebase</h1>
             <div className="row">
                 <div className="col-lg-4 mb-4">
                     <BackgroundList backgrounds={props.index} />

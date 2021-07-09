@@ -1,15 +1,19 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
+import logo from "../../assets/logo.svg";
+
 const Header = () => {
     return (
         <div className="pb-5">
             <Navbar bg="dark" variant="dark" expand="sm" fixed="top">
                 <Container>
                     <Navbar.Brand href="/">
-                        <span className="text-danger fw-bold">
-                            Dungeon Adventurer
-                        </span>
+                        <img
+                            src={logo}
+                            height="95px"
+                            alt="Dungeon Adventurer Logo"
+                        />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
