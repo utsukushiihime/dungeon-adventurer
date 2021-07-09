@@ -16,8 +16,14 @@ const Footer = () => {
                         </div>
                         <div className="col-4 text-right">
                             <span className="text-muted float-start text-left">
-                                Made with <TiHeart className="text-danger" /> by
-                                Creativarian.
+                                Made with <TiHeart className="text-danger" /> by{" "}
+                                <a
+                                    className="text-danger text-decoration-none"
+                                    href="https://creativarian.com"
+                                >
+                                    Creativarian
+                                </a>
+                                .
                             </span>
                             <p className="float-end">
                                 <a
