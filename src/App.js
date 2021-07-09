@@ -16,6 +16,7 @@ import NotFound from "../src/components/Helpers/NotFound";
 
 import RacesPage from "./components/KB/RacesPage";
 import SubclassPage from "./components/KB/SubclassPage";
+import FeaturesPage from "./components/KB/FeaturesPage";
 
 function App() {
     return (
@@ -52,6 +53,11 @@ function App() {
                         exact
                         path="/knowledgebase/subclasses/:index"
                         component={SubclassPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/features/:index"
+                        component={FeaturesPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
