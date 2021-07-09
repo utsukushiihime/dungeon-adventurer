@@ -1,6 +1,6 @@
 # Dungeon Adventurer
 
-### Dungeon Adventurer is a text based dungeon crawler game. It is written in React.
+### Dungeon Adventurer is a virtual tabletop. It is written in React.
 
 ---
 
