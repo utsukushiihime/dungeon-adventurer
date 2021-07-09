@@ -19,6 +19,8 @@ import SubclassPage from "./components/KB/SubclassPage";
 import FeaturesPage from "./components/KB/FeaturesPage";
 import SubracesPage from "./components/KB/SubracesPage";
 import TraitsPage from "./components/KB/TraitsPage";
+import EquipmentCategoryPage from "./components/KB/EquipmentCategoryPage";
+import EquipmentPage from "./components/KB/EquipmentPage";
 
 function App() {
     return (
@@ -70,6 +72,16 @@ function App() {
                         exact
                         path="/knowledgebase/traits/:index"
                         component={TraitsPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/equipment/:index"
+                        component={EquipmentPage}
+                    />
+                    <Route
+                        exact
+                        path="/knowledgebase/equipment-categories/:index"
+                        component={EquipmentCategoryPage}
                     />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />

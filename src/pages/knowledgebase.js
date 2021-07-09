@@ -9,6 +9,8 @@ import SubclassList from "../components/KB/SubclassList";
 import FeaturesList from "../components/KB/FeaturesList";
 import SubracesList from "../components/KB/SubracesList";
 import TraitsList from "../components/KB/TraitsList";
+import EquipmentCategoryList from "../components/KB/EquipmentCategoryList";
+import EquipmentList from "../components/KB/EquipmentList";
 
 const Knowledgebase = (props) => {
     return (
@@ -19,6 +21,12 @@ const Knowledgebase = (props) => {
                 </div>
                 <div className="col-lg-4 mb-4">
                     <ClassList classes={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
+                    <EquipmentList equipment={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
+                    <EquipmentCategoryList equipment={props.index} />
                 </div>
                 <div className="col-lg-4 mb-4">
                     <FeaturesList features={props.index} />
