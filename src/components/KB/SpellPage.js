@@ -36,7 +36,7 @@ const SpellPage = () => {
         <Layout>
             <h1>{spell.name}</h1>
             <div className="row">
-                <div className="col-6 pe-4">
+                <div className="col-lg-6 pe-4 col-md-12 col-sm-12">
                     <h5 className="fw-bold">Description: </h5>
                     <p>{spell.desc}</p>
 
@@ -56,7 +56,7 @@ const SpellPage = () => {
                     <p>{spell.ritual}</p>
                 </div>
 
-                <div className="col-6 ps-4">
+                <div className="col-lg-6 ps-4 col-md-12 col-sm-12">
                     <h5 className="fw-bold">Duration: </h5>
                     <p>{spell.duration}</p>
 

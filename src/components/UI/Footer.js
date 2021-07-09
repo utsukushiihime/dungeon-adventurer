@@ -1,5 +1,5 @@
 import React from "react";
-import { TiHeart } from "react-icons/ti";
+import { TiHeart, TiArrowSortedUp } from "react-icons/ti";
 
 const Footer = () => {
     return (
@@ -15,10 +15,18 @@ const Footer = () => {
                             </span>
                         </div>
                         <div className="col-4 text-right">
-                            <span className="text-muted float-end text-right">
+                            <span className="text-muted float-start text-left">
                                 Made with <TiHeart className="text-danger" /> by
                                 Creativarian.
                             </span>
+                            <p className="float-end">
+                                <a
+                                    className="text-danger text-decoration-none"
+                                    href="#top"
+                                >
+                                    <TiArrowSortedUp /> To top
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
