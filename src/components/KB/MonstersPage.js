@@ -35,35 +35,112 @@ const MonstersPage = () => {
     return (
         <Layout>
             <h1>{monsterItem.name}</h1>
-            {/* 
-            <h5 className="fw-bold">Hit Die </h5>
-            <p>{monsterItem.hit_die}</p>
+            <div className="row">
+                <div className="col">
+                    <h5 className="fw-bold">Size </h5>
+                    <p>{monsterItem.size}</p>
 
-            <h5 className="fw-bold">Starting Proficiencies </h5>
-            <p>
-                {JSON.stringify(monsterItem.starting_proficiencies, null, 2)}
-            </p>
+                    <h5 className="fw-bold">Type </h5>
+                    <p>{monsterItem.type}</p>
 
-            <h5 className="fw-bold">Language Options </h5>
-            <p>{JSON.stringify(monsterItem.language_options, null, 2)}</p>
+                    <h5 className="fw-bold">Subtype </h5>
+                    <p>{monsterItem.subtype}</p>
 
-            <h5 className="fw-bold">Starting Equipment </h5>
-            <p>{JSON.stringify(monsterItem.starting_equipment, null, 2)}</p>
+                    <h5 className="fw-bold">Alignment </h5>
+                    <p>{monsterItem.alignment}</p>
 
-            <h5 className="fw-bold">Feature </h5>
-            <p>{JSON.stringify(monsterItem.feature, null, 2)}</p>
+                    <h5 className="fw-bold">Armor Class </h5>
+                    <p>{monsterItem.armor_class}</p>
 
-            <h5 className="fw-bold">Personality Traits </h5>
-            <p>{JSON.stringify(monsterItem.personality_traits, null, 2)}</p>
+                    <h5 className="fw-bold">Hit Points </h5>
+                    <p>{monsterItem.hit_points}</p>
 
-            <h5 className="fw-bold">Ideals </h5>
-            <p>{JSON.stringify(monsterItem.ideals, null, 2)}</p>
+                    <h5 className="fw-bold">Hit Dice </h5>
+                    <p>{monsterItem.hit_dice}</p>
 
-            <h5 className="fw-bold">Bonds </h5>
-            <p>{JSON.stringify(monsterItem.bonds, null, 2)}</p>
+                    <h5 className="fw-bold">Forms </h5>
+                    <p>{JSON.stringify(monsterItem.forms, null, 2)}</p>
 
-            <h5 className="fw-bold">Flaws </h5>
-            <p>{JSON.stringify(monsterItem.flaws, null, 2)}</p> */}
+                    <h5 className="fw-bold">Speed </h5>
+                    <p>{JSON.stringify(monsterItem.speed, null, 2)}</p>
+
+                    <h5 className="fw-bold">Strength </h5>
+                    <p>{monsterItem.strength}</p>
+
+                    <h5 className="fw-bold">Dexterity </h5>
+                    <p>{monsterItem.dexterity}</p>
+
+                    <h5 className="fw-bold">Constitution </h5>
+                    <p>{monsterItem.constitution}</p>
+
+                    <h5 className="fw-bold">Intelligence </h5>
+                    <p>{monsterItem.intelligence}</p>
+
+                    <h5 className="fw-bold">Wisdom </h5>
+                    <p>{monsterItem.wisdom}</p>
+
+                    <h5 className="fw-bold">Charisma </h5>
+                    <p>{monsterItem.charisma}</p>
+
+                    <h5 className="fw-bold">Proficiencies </h5>
+                    <p>{JSON.stringify(monsterItem.proficiencies, null, 2)}</p>
+
+                    <h5 className="fw-bold">Damage Vulnerabilities </h5>
+                    <p>
+                        {JSON.stringify(
+                            monsterItem.damage_vulnerabilities,
+                            null,
+                            2
+                        )}
+                    </p>
+
+                    <h5 className="fw-bold">Damage Resistances </h5>
+                    <p>
+                        {JSON.stringify(
+                            monsterItem.damage_resistances,
+                            null,
+                            2
+                        )}
+                    </p>
+
+                    <h5 className="fw-bold">Damage Immunities </h5>
+                    <p>
+                        {JSON.stringify(monsterItem.damage_immunities, null, 2)}
+                    </p>
+
+                    <h5 className="fw-bold">Condition Immunities </h5>
+                    <p>
+                        {JSON.stringify(
+                            monsterItem.condition_immunities,
+                            null,
+                            2
+                        )}
+                    </p>
+
+                    <h5 className="fw-bold">Senses </h5>
+                    <p>{JSON.stringify(monsterItem.senses, null, 2)}</p>
+                </div>
+                <div className="col">
+                    <h5 className="fw-bold">Languages </h5>
+                    <p>{monsterItem.languages}</p>
+
+                    <h5 className="fw-bold">Challenge Rating </h5>
+                    <p>{monsterItem.challenge_rating}</p>
+
+                    <h5 className="fw-bold">Special Abilities </h5>
+                    <p>
+                        {JSON.stringify(monsterItem.special_abilities, null, 2)}
+                    </p>
+
+                    <h5 className="fw-bold">Actions </h5>
+                    <p>{JSON.stringify(monsterItem.actions, null, 2)}</p>
+
+                    <h5 className="fw-bold">Legendary Actions </h5>
+                    <p>
+                        {JSON.stringify(monsterItem.legendary_actions, null, 2)}
+                    </p>
+                </div>
+            </div>
         </Layout>
     );
 };
