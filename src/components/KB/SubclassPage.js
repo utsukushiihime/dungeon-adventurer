@@ -26,7 +26,7 @@ const SubclassPage = () => {
     }, [index]);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,13 +36,13 @@ const SubclassPage = () => {
         <Layout>
             <h1>{subClass.name}</h1>
 
-            <h5>Subclass Flavor: </h5>
+            <h5>Subclass Flavor </h5>
             <p>{subClass.subclass_flavor}</p>
 
             <h5 className="fw-bold">Description: </h5>
             <p>{JSON.stringify(subClass.desc, null, 2)}</p>
 
-            <h5>Subclass Levels: </h5>
+            <h5>Subclass Levels </h5>
             <p>{subClass.subclass_levels}</p>
         </Layout>
     );

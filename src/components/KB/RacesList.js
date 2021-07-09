@@ -25,7 +25,7 @@ const RacesList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,7 +36,7 @@ const RacesList = (props) => {
             <h1>Races</h1>
             {racesList.map((race, key) => (
                 <Link key={key} to={`/knowledgebase/races/${race.index}`}>
-                    <h5>{race.name}</h5>
+                    <div>{race.name}</div>
                 </Link>
             ))}
         </div>

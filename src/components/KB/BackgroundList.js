@@ -25,7 +25,7 @@ const BackgroundList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -39,7 +39,7 @@ const BackgroundList = (props) => {
                     key={key}
                     to={`/knowledgebase/backgrounds/${background.index}`}
                 >
-                    <h5>{background.name}</h5>
+                    <div>{background.name}</div>
                 </Link>
             ))}
         </div>

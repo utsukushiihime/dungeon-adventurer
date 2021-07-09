@@ -25,7 +25,7 @@ const ClassList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -39,7 +39,7 @@ const ClassList = (props) => {
                     key={key}
                     to={`/knowledgebase/classes/${classItem.index}`}
                 >
-                    <h5>{classItem.name}</h5>
+                    <div>{classItem.name}</div>
                 </Link>
             ))}
         </div>

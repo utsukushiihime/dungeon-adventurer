@@ -25,7 +25,7 @@ const SpellsList = (props) => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,7 +36,7 @@ const SpellsList = (props) => {
             <h1>Spells</h1>
             {spells.map((spell, key) => (
                 <Link key={key} to={`/knowledgebase/spells/${spell.index}`}>
-                    <h5>{spell.name}</h5>
+                    <div>{spell.name}</div>
                 </Link>
             ))}
         </div>

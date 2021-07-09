@@ -26,7 +26,7 @@ const SpellPage = () => {
     }, [index]);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,33 +36,33 @@ const SpellPage = () => {
         <Layout>
             <h1>{classItem.name}</h1>
 
-            <h5 className="fw-bold">Hit Die: </h5>
+            <h5 className="fw-bold">Hit Die </h5>
             <p>{classItem.hit_die}</p>
 
-            <h5 className="fw-bold">Proficiency Choices: </h5>
+            <h5 className="fw-bold">Proficiency Choices </h5>
             <p>{JSON.stringify(classItem.proficiency_choices, null, 2)}</p>
 
-            <h5 className="fw-bold">Proficiencies: </h5>
+            <h5 className="fw-bold">Proficiencies </h5>
             <p>{JSON.stringify(classItem.proficiencies, null, 2)}</p>
 
-            <h5 className="fw-bold">Saving Throws: </h5>
+            <h5 className="fw-bold">Saving Throws </h5>
             <p>{JSON.stringify(classItem.saving_throws, null, 2)}</p>
 
-            <h5 className="fw-bold">Starting Equipment: </h5>
+            <h5 className="fw-bold">Starting Equipment </h5>
             <p>{JSON.stringify(classItem.starting_equipment, null, 2)}</p>
 
-            <h5 className="fw-bold">Starting Equipment Options: </h5>
+            <h5 className="fw-bold">Starting Equipment Options </h5>
             <p>
                 {JSON.stringify(classItem.starting_equipment_options, null, 2)}
             </p>
 
-            <h5 className="fw-bold">Subclasses: </h5>
+            <h5 className="fw-bold">Subclasses </h5>
             <p>{JSON.stringify(classItem.subclasses, null, 2)}</p>
 
-            <h5 className="fw-bold">Spellcasting: </h5>
+            <h5 className="fw-bold">Spellcasting </h5>
             <p>{JSON.stringify(classItem.spellcasting, null, 2)}</p>
 
-            <h5 className="fw-bold">Spells: </h5>
+            <h5 className="fw-bold">Spells </h5>
             <p>{JSON.stringify(classItem.spells, null, 2)}</p>
         </Layout>
     );

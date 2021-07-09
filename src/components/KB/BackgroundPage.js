@@ -26,7 +26,7 @@ const SpellPage = () => {
     }, [index]);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,33 +36,33 @@ const SpellPage = () => {
         <Layout>
             <h1>{backgroundItem.name}</h1>
 
-            <h5 className="fw-bold">Hit Die: </h5>
+            <h5 className="fw-bold">Hit Die </h5>
             <p>{backgroundItem.hit_die}</p>
 
-            <h5 className="fw-bold">Starting Proficiencies: </h5>
+            <h5 className="fw-bold">Starting Proficiencies </h5>
             <p>
                 {JSON.stringify(backgroundItem.starting_proficiencies, null, 2)}
             </p>
 
-            <h5 className="fw-bold">Language Options: </h5>
+            <h5 className="fw-bold">Language Options </h5>
             <p>{JSON.stringify(backgroundItem.language_options, null, 2)}</p>
 
-            <h5 className="fw-bold">Starting Equipment: </h5>
+            <h5 className="fw-bold">Starting Equipment </h5>
             <p>{JSON.stringify(backgroundItem.starting_equipment, null, 2)}</p>
 
-            <h5 className="fw-bold">Feature: </h5>
+            <h5 className="fw-bold">Feature </h5>
             <p>{JSON.stringify(backgroundItem.feature, null, 2)}</p>
 
-            <h5 className="fw-bold">Personality Traits: </h5>
+            <h5 className="fw-bold">Personality Traits </h5>
             <p>{JSON.stringify(backgroundItem.personality_traits, null, 2)}</p>
 
-            <h5 className="fw-bold">Ideals: </h5>
+            <h5 className="fw-bold">Ideals </h5>
             <p>{JSON.stringify(backgroundItem.ideals, null, 2)}</p>
 
-            <h5 className="fw-bold">Bonds: </h5>
+            <h5 className="fw-bold">Bonds </h5>
             <p>{JSON.stringify(backgroundItem.bonds, null, 2)}</p>
 
-            <h5 className="fw-bold">Flaws: </h5>
+            <h5 className="fw-bold">Flaws </h5>
             <p>{JSON.stringify(backgroundItem.flaws, null, 2)}</p>
         </Layout>
     );

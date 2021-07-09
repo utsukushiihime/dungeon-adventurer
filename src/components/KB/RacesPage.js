@@ -26,7 +26,7 @@ const RacesPage = () => {
     }, [index]);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div className="mt-5 text-center fw-bold">Loading...</div>;
     }
     if (error) {
         return <div>Error loading: {error}</div>;
@@ -36,40 +36,40 @@ const RacesPage = () => {
         <Layout>
             <h1>{race.name}</h1>
 
-            <h5 className="fw-bold">Speed: </h5>
+            <h5 className="fw-bold">Speed </h5>
             <p>{JSON.stringify(race.speed, null, 2)}</p>
 
             <h5 className="fw-bold">Ability Bonuses: </h5>
             <p>{JSON.stringify(race.ability_bonuses, null, 2)}</p>
 
-            <h5 className="fw-bold">Alignment: </h5>
+            <h5 className="fw-bold">Alignment </h5>
             <p>{race.alignment}</p>
 
-            <h5 className="fw-bold">Age: </h5>
+            <h5 className="fw-bold">Age </h5>
             <p>{race.age}</p>
 
-            <h5 className="fw-bold">Size: </h5>
+            <h5 className="fw-bold">Size </h5>
             <p>{race.size}</p>
 
-            <h5 className="fw-bold">Size Description: </h5>
+            <h5 className="fw-bold">Size Description </h5>
             <p>{race.size_description}</p>
 
-            <h5 className="fw-bold">Starting Proficiencies: </h5>
+            <h5 className="fw-bold">Starting Proficiencies </h5>
             <p>{JSON.stringify(race.starting_proficiencies, null, 2)}</p>
 
-            <h5 className="fw-bold">Starting Proficiency Options: </h5>
+            <h5 className="fw-bold">Starting Proficiency Options </h5>
             <p>{JSON.stringify(race.starting_proficiency_options, null, 2)}</p>
 
-            <h5 className="fw-bold">Languages: </h5>
+            <h5 className="fw-bold">Languages </h5>
             <p>{JSON.stringify(race.languages, null, 2)}</p>
 
-            <h5 className="fw-bold">Language Description: </h5>
+            <h5 className="fw-bold">Language Description </h5>
             <p>{race.language_desc}</p>
 
-            <h5 className="fw-bold">Traits: </h5>
+            <h5 className="fw-bold">Traits </h5>
             <p>{JSON.stringify(race.traits, null, 2)}</p>
 
-            <h5 className="fw-bold">Subraces: </h5>
+            <h5 className="fw-bold">Subraces </h5>
             <p>{JSON.stringify(race.subraces, null, 2)}</p>
         </Layout>
     );
