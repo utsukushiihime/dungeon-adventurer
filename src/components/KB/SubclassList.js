@@ -34,14 +34,14 @@ const SubclassList = (props) => {
     }
 
     return (
-        <div className="container">
-            <h1>Subclasses</h1>
+        <div className="container max-items bg-dark">
+            <h1 className="text-danger">Subclasses</h1>
             {subClassList.map((subClass, key) => (
                 <Link
                     key={key}
                     to={`/knowledgebase/subclasses/${subClass.index}`}
                 >
-                    <div>
+                    <div className="text-white">
                         <RiArrowDropRightLine /> {subClass.name}
                     </div>
                 </Link>

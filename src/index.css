@@ -42,3 +42,11 @@ a div:hover {
 p {
     font-weight: 300;
 }
+
+.max-items {
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 20px;
+}

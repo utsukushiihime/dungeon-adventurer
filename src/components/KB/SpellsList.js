@@ -34,11 +34,11 @@ const SpellsList = (props) => {
     }
 
     return (
-        <div className="container">
-            <h1>Spells</h1>
+        <div className="container max-items bg-dark">
+            <h1 className="text-danger">Spells</h1>
             {spells.map((spell, key) => (
                 <Link key={key} to={`/knowledgebase/spells/${spell.index}`}>
-                    <div>
+                    <div className="text-white">
                         <RiArrowDropRightLine /> {spell.name}
                     </div>
                 </Link>

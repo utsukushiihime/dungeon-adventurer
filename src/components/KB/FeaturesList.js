@@ -34,11 +34,11 @@ const FeaturesList = (props) => {
     }
 
     return (
-        <div className="container">
-            <h1>Features</h1>
+        <div className="container max-items bg-dark">
+            <h1 className="text-danger">Features</h1>
             {featuresList.map((feature, key) => (
                 <Link key={key} to={`/knowledgebase/features/${feature.index}`}>
-                    <div>
+                    <div className="text-white">
                         <RiArrowDropRightLine /> {feature.name}
                     </div>
                 </Link>

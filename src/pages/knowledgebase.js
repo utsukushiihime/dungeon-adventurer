@@ -12,23 +12,23 @@ const Knowledgebase = (props) => {
     return (
         <Layout>
             <div className="row">
-                <div className="col">
-                    <SpellsList spells={props.index} />
-                </div>
-                <div className="col">
-                    <ClassList classes={props.index} />
-                </div>
-                <div className="col">
+                <div className="col-lg-4 mb-4">
                     <BackgroundList backgrounds={props.index} />
                 </div>
-                <div className="col">
+                <div className="col-lg-4 mb-4">
+                    <ClassList classes={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
+                    <FeaturesList features={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
                     <RacesList races={props.index} />
                 </div>
-                <div className="col">
-                    <SubclassList subclass={props.index} />
+                <div className="col-lg-4 mb-4">
+                    <SpellsList spells={props.index} />
                 </div>
-                <div className="col">
-                    <FeaturesList features={props.index} />
+                <div className="col-lg-4 mb-4">
+                    <SubclassList subclass={props.index} />
                 </div>
             </div>
         </Layout>

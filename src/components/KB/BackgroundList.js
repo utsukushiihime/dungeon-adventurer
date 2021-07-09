@@ -34,14 +34,14 @@ const BackgroundList = (props) => {
     }
 
     return (
-        <div className="container">
-            <h1>Backgrounds</h1>
+        <div className="container max-items bg-dark">
+            <h1 className="text-danger">Backgrounds</h1>
             {backgroundList.map((background, key) => (
                 <Link
                     key={key}
                     to={`/knowledgebase/backgrounds/${background.index}`}
                 >
-                    <div>
+                    <div className="text-white">
                         <RiArrowDropRightLine /> {background.name}
                     </div>
                 </Link>

@@ -34,14 +34,14 @@ const ClassList = (props) => {
     }
 
     return (
-        <div className="container">
-            <h1>Classes</h1>
+        <div className="container max-items bg-dark">
+            <h1 className="text-danger">Classes</h1>
             {classList.map((classItem, key) => (
                 <Link
                     key={key}
                     to={`/knowledgebase/classes/${classItem.index}`}
                 >
-                    <div>
+                    <div className="text-white">
                         <RiArrowDropRightLine /> {classItem.name}
                     </div>
                 </Link>
