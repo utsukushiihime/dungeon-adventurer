@@ -8,6 +8,7 @@ import RacesList from "../components/KB/RacesList";
 import SubclassList from "../components/KB/SubclassList";
 import FeaturesList from "../components/KB/FeaturesList";
 import SubracesList from "../components/KB/SubracesList";
+import TraitsList from "../components/KB/TraitsList";
 
 const Knowledgebase = (props) => {
     return (
@@ -33,6 +34,9 @@ const Knowledgebase = (props) => {
                 </div>
                 <div className="col-lg-4 mb-4">
                     <SubracesList subrace={props.index} />
+                </div>
+                <div className="col-lg-4 mb-4">
+                    <TraitsList traits={props.index} />
                 </div>
             </div>
         </Layout>
