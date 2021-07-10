@@ -1,4 +1,12 @@
 import React from "react";
+import {
+    RecoilRoot,
+    atom,
+    selector,
+    useRecoilState,
+    useRecoilValue,
+} from "recoil";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,76 +34,78 @@ import MonstersPage from "./components/KB/MonstersPage";
 function App() {
     return (
         <>
-            <Router>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route
-                        exact
-                        path="/knowledgebase"
-                        component={Knowledgebase}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/spells/:index"
-                        component={SpellPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/classes/:index"
-                        component={ClassPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/backgrounds/:index"
-                        component={BackgroundPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/races/:index"
-                        component={RacesPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/subclasses/:index"
-                        component={SubclassPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/features/:index"
-                        component={FeaturesPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/subraces/:index"
-                        component={SubracesPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/traits/:index"
-                        component={TraitsPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/equipment/:index"
-                        component={EquipmentPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/equipment-categories/:index"
-                        component={EquipmentCategoryPage}
-                    />
-                    <Route
-                        exact
-                        path="/knowledgebase/monsters/:index"
-                        component={MonstersPage}
-                    />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/register" component={Register} />
-                    <Route component={NotFound} />
-                </Switch>
-            </Router>
+            <RecoilRoot>
+                <Router>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route
+                            exact
+                            path="/knowledgebase"
+                            component={Knowledgebase}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/spells/:index"
+                            component={SpellPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/classes/:index"
+                            component={ClassPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/backgrounds/:index"
+                            component={BackgroundPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/races/:index"
+                            component={RacesPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/subclasses/:index"
+                            component={SubclassPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/features/:index"
+                            component={FeaturesPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/subraces/:index"
+                            component={SubracesPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/traits/:index"
+                            component={TraitsPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/equipment/:index"
+                            component={EquipmentPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/equipment-categories/:index"
+                            component={EquipmentCategoryPage}
+                        />
+                        <Route
+                            exact
+                            path="/knowledgebase/monsters/:index"
+                            component={MonstersPage}
+                        />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/login" component={Login} />
+                        <Route path="/register" component={Register} />
+                        <Route component={NotFound} />
+                    </Switch>
+                </Router>
+            </RecoilRoot>
         </>
     );
 }

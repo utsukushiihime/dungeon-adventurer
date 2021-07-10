@@ -1,6 +1,6 @@
 # Dungeon Adventurer
 
-### Dungeon Adventurer is a virtual tabletop. It is written in React.
+### Dungeon Adventurer is a virtual tabletop. It is written in React with Recoil for state management and Axios for API calls.
 
 ---
 
